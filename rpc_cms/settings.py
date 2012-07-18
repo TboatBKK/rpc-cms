@@ -1,7 +1,9 @@
 # Django settings for rpc_cms project.
+import os
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
+ROOT = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
 
 ADMINS = (
     # ('Your Name', 'your_email@example.com'),
